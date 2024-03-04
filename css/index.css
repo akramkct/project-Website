@@ -1,0 +1,336 @@
+html{
+	scroll-behavior: smooth;
+}
+.techbody{
+ background: url('../image/darkback.jpg');
+ background-attachment: fixed;
+ background-size: 100% 100%;
+}
+a.active{
+	background: yellow
+}
+#stick{
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+}
+.nav ul{
+	background: rgba(0,0,0,0.5);
+	margin: 0px;
+	padding: 0px;
+}
+.nav li{
+	display: inline-block;
+}
+.nav li a{
+	text-decoration: none;
+	font-size: 20px;
+	padding: 15px;
+	display: block;
+	color: rebeccapurple;
+	position: relative;
+}
+.nav a:after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color: #ff3c78;
+	left: 0px;
+	bottom: 1px;
+	transition: 0.3s;
+}
+.nav a:hover:after{
+	width: 100%;
+}
+.nav li a:hover{
+	background: black;
+	color: #fff;
+}
+li.active{
+	background: cyan;
+}
+.nav ul ul li {
+	background:rgba(0, 0, 0, 1);
+}
+#search{
+	float: right;
+	margin-top: 10px;
+}
+.nav li input{
+	height: 35px;
+	width: 180px;
+	border: 1px solid blue;
+}
+#fasearch{
+	position: relative;
+	right: 20px;
+}
+.nav li ul{
+	display: none;
+	position: absolute;
+}
+.nav li:hover ul{
+	display: block;
+}
+.nav li li{
+	display: block;
+	width: 160px;
+	height: 40px;
+	border-bottom: 1px solid #777;
+}
+.nav li li a{
+	color: gold;
+	font-size: 18px;
+}
+.nav ul li:nth-child(3) li{
+	height: 50px;
+}
+.nav ul li:nth-child(3) li a{
+	font-size: 15px;
+}
+.nav div:last-child{
+	background: url('../image/globe3.jpg');
+	background-size: 100% 100%;
+	height: 700px;
+	background-attachment: fixed
+}
+.logo{
+	border: 1px solid yellow;
+}
+#brand{
+	color: #caaa59;
+	position: absolute;
+	top: 300px;
+	left: 150px;
+	font-size: 100px;
+}
+#companyname1{
+	color :#25cc86;
+	font-size: 40px;
+	position:relative ;
+	top: 350px;
+	left: 70px;
+	font-family: Copperplate Papyrus;
+}
+#companyname2{
+	color :#25cc86;
+	font-size: 50px;
+	position:relative ;
+	top: 350px;
+	left: 70px;	
+}
+#companyname2:hover{
+	animation: companyname 4s linear;
+	color: #dd70a0;
+	font-size: 60px;
+	transition: 5s;
+	font-family: Copperplate Papyrus;
+}
+@keyframes companyname{
+	0%{top: 350px;left: 70px; color: yellow;}	 
+	25%{top: 320px;left:90px; color: green ;}
+	50%{top: 350px;left: 90px; color: blue;}
+	75%{top: 380px;left: 90px; color: gold;}
+	100%{top: 350px;left: 70px; color: #dd70a0;}
+} 
+#registered-mark{
+	color: blue;
+	font-size: 15px;
+	position: relative;
+	top: 340px;
+	left: 80px;	
+}
+/*====================================Content Section=================================*/
+h1{
+	text-align: center;
+	font-family: serif;
+	font-size: 60px;
+}
+p{
+	text-align: justify;
+	font-size: 20px;
+	color: white;
+	line-height: 45px;
+	font-family: serif;	
+}
+#about-paragraph{
+	margin: 0px 100px;
+}
+.about-us{
+	margin-top: 20%;
+	color: #fcba03;
+}
+hr{
+	width: 1200px;
+	border: 3px ridge;
+}
+.partner{
+	margin-top:20%;
+	color: #fcba03;
+
+}
+.partner div{
+	display: inline-flex;
+	flex-direction: column;
+	width: 20%;
+	padding: 27px;
+	box-sizing: border-box;
+
+}
+.partner div img{
+	width: 100%;
+	height: 200px;
+}
+.partner p{
+	text-align: center;
+	font-size: 15px;
+	font-family: calibri;
+	color: #fcba03;
+	
+}
+.partner img:hover{
+	cursor: crosshair;
+	opacity: 0.7;
+	transform: scale(1.1);
+	transition: 2s;
+}
+.partner h2{
+	margin-top: 50px;
+}
+.service{
+	margin-top: 20%;
+	color: #fcba03;
+}
+.service div div{
+	display: inline-block;
+	padding: 10px;
+	width: 20%;
+}
+.service img{
+	width: 100%;
+	height: 250px;
+}
+.team{
+	margin-top: 20%;
+}
+.team div{
+	display: inline-block;
+	width: 20%;
+	padding: 30px;
+}
+.team div img{
+	width: 100%;
+	display: block;
+	height: 400px;
+}
+.team h1{
+	color: #fcba03;
+}
+.team div p{
+	font-size: 18px;
+	font-family: monospace;
+	text-align: center;
+}
+/*=========================================footer section ==========================*/
+footer h1{
+	color:#fcba03 ;
+	font-family: calibri;
+	margin-top: 18%;
+}
+footer {
+	background: rgba(200, 200, 200, 0.2);
+}
+.contact{
+	padding: 0px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 250px;
+}
+.contact div{
+	width: 20%;
+	height: 200px;
+	display: inline-block;
+	padding: 20px;
+}
+#joinmedia{
+	//display: inline-block;
+	position: relative;
+	bottom: 31px;
+}
+#joinmedia i{
+	font-size: 30px;
+	padding: 10px;
+	color: #fff;
+	cursor: progress;
+}
+.contact h4{
+	font-size: 25px;
+	color: #4e88cf;
+	text-align: center;
+}
+#filldetail{
+	position: relative;
+	bottom: 106px;
+}
+#filldetail th{
+	color: #fff;
+	font-size: 20px;
+}
+#filldetail input
+{
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+}
+#filldetail  table button{
+	background: transparent;
+	color: white;
+	font-weight: 100;
+	border: 1px solid red;
+}
+.supportandabout{
+	display:inline-block;
+	position: relative;
+	top: 3px;
+
+}
+.supportandabout li{
+	list-style-type: none;
+	text-align: center;
+	color: #edf0f5;
+}
+.contact p{
+	text-align: center;
+}
+.contact table button{
+	background: green;
+}
+.contact div table td{
+	padding: 2%;
+}
+.contact div table th{
+	font-size: 25px;
+}	
+#footerform{
+	float: right;
+}
+#footerform select{
+	width: 300px;
+	height: 30px;
+	background: transparent;
+	color: #fff;
+}
+#footerform select option{
+	background: rgba(0, 0, 0, 1);
+	color: #fff;
+}
+.laststrip{
+	height: 10px;
+	background: #fff;
+	margin-top: 30px;
+}
+.supportandabout ul{
+	position: relative;
+	right: 20px;
+}
